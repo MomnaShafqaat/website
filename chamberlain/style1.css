@@ -9,7 +9,7 @@
 li{
     list-style-type:none ;
 }
-
+/*---------------LEVEL 0----------------*/
 
 /*---------------pre-nav-bar-heading----------------*/
 
@@ -40,7 +40,12 @@ font-weight: 700;
 
 /*---------------main-nav-bar-----------------*/
 #main-nav {
-   
+    position: fixed; /* Fixed position makes the nav stick to the viewport */
+    top: 0; /* Stick the nav bar to the top */
+    width: 100%; /* Make sure it spans the full width of the screen */
+    z-index: 1000; 
+
+ 
     height: 79px;
     display: flex;
     align-items: center;
@@ -76,6 +81,7 @@ li a {
     padding: 10px 15px; /* Add padding for clickable area */
 }
 
+/*---------------LEVEL 1----------------*/
 
 /*---------------------hero-section---------------------*/
 .hero-section {
@@ -152,7 +158,7 @@ padding: 23px;
 /*--------product show case-------*/
 .product-showcase{
 width: 1385px;
-height: 1570px;
+height: 3770px;
 background-color: #c5d5db;
 display: flex;
 flex-direction: column ;
@@ -171,19 +177,22 @@ li{
     color: #022846;
    padding-top: 70px;
    font-size: xx-large;
+   margin-bottom: -70px;
 }
 #bundle-para{
+    margin-bottom: -15px;
    padding-bottom: 70px;
-  padding-top: 10px;
+  padding-top: -100px;
   color: #003865;
 }
+/*---------------LEVEL 2----------------*/
 
 
-
-/*------------------box------------------*/
+/*------------------box1------------------*/
 .shop-sec {
     margin-left: 57px;
-    margin-right: 70px;
+    margin-right: 75px;
+    margin-bottom: 70px;
     display: flex;
    align-items: flex-start;
     justify-content: space-evenly; /* Distribute space between items */
@@ -202,7 +211,7 @@ li{
 .box-content{
   
 border-radius: 28px;
-height:370px;
+height:405px;
 width:110;
 background-color: white;
 display:flex;
@@ -267,12 +276,14 @@ margin-top: 0.2rem;
     color:white;
 }
 
+/*---------------LEVEL 3----------------*/
+
 /*----------something for everyone------*/
 
 
 
 .after-products{
-    height:509px;                                          
+    height:480px;                                          
     width:1385px;
     border-radius: 50px ;
     background-color: rgb(255, 255, 255);
@@ -281,13 +292,137 @@ margin-top: 0.2rem;
 
 
 }
-.something-for-everyone{
+.something-for-everyone h2{
     text-align: center;
     color: #022846;
-    padding-top: 70px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    
     font-size: xx-large;
+}
+.shake-image{
+    height: 195px;
+   
+    width: 202px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+/* Keyframe animation for shake */
+@keyframes shake {
+    0% { transform: translate(0px, 0px); }
+    20% { transform: translate(-3px, 0px); }
+    40% { transform: translate(3px, 0px); }
+    60% { transform: translate(-3px, 0px); }
+    80% { transform: translate(3px, 0px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+/* Apply the shake animation on hover */
+.shake-image:hover {
+    animation: shake 0.7s; /* Duration of the shake */
+    animation-iteration-count: 1; /* Shake only once */
+}
+
+.below-img-info2 h4{
+    color: #022846;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#accessories-box2{
+    margin-left: 60px;
+}
+/*---------------LEVEL 4----------------*/
+
+/*------------------box2------------------*/
+.box-content2{
+height:270px;
+width: 225px;
+margin:-10px;
+
+}
+.box2{
+    height: 273px;
+    width: 1300;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
 }
 body {
     width: 1385px;
    overflow-x: hidden;
+}
+.product-heading h2{
+    padding-bottom: 113px;
+}
+/*---------------LEVEL 5----------------*/
+
+/*-----------------emma lab video------------------*/
+.emma-vid{
+    background-color:    #022846;
+    height:750px;                                          
+    width:1385px;
+    border-radius: 50px ;
+    margin-top: 680px;
+    display: flex;
+}
+.vid-text{
+    height:590px;                                          
+    width:50%;
+    margin:88px;
+    margin-top:89px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content:flex-start;
+    align-items: start;
+    
+}
+.lab-btn {
+  
+    padding: 10px 20px; /* Button size */
+
+    font-weight: bold;
+    cursor: pointer;
+    height: 60px;
+    width: 300px;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    font-size: large;
+
+}
+.lab-heading1{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 13px;
+}
+.lab-heading2{
+    font-size: 1.47rem;
+    font-weight: bolder;
+}
+.lab-para{
+    font-size: large;
+    margin: 16px 0px 27px 0px;
+}
+.cartoonish-mug{
+    height: 230px;
+    width: 210px;
+    background-size: cover;
+    margin-top: 89px;
+}
+.actual-vid{
+
+    background-size: cover;
+    height:587px;                                          
+    width:23.8%;
+    border-radius: 50px;
+    margin:82px 15px 0px 0px ;
 }
